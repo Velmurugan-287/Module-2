@@ -1,40 +1,37 @@
-# Exp.No:2d
-## LOOPING PATTERNS - PRINTING PATTERN
+# Exp.No:2e  
+## SEB - SUM OF THE SERIES
 
 ---
 
 ### AIM  
-Write a python program  to print the downward pyramid pattern of stars
+Python Program to find the sum of series 1+3+5+7.......+N 
 
 ---
 
 ### ALGORITHM
 
 1. **Start** the program.
-2. **Input** the number of rows for the pyramid (say `n`).
-3. **Loop** from `i = n` down to `1`:
-   - Print `(n - i)` spaces to center the stars.
-   - Print `(2 * i - 1)` stars on the current row.
-4. **Repeat** until all rows are printed.
-5. **End** the program.
-
+2. **Input** the value of `N` from the user.
+3. **Initialize** a variable `sum = 0`.
+4. **Loop** from `i = 1` to `N`, incrementing by 2 (to get only odd numbers).
+   - On each iteration, **add `i` to `sum`**.
+5. **After the loop**, print the value of `sum`.
+6. **End** the program.
 
 ---
 
 ### PROGRAM
+
 ```
 n=int(input())
-for i in range (1,n+1,1):
-    for j in range (i,n+1,1):
-        print(end="* ")
-    print(end="\n")
-    
-
+sum=0
+for i in range(1,n+1,2):
+    sum=sum+i
+print("The sum of the series = ",sum)
 ```
-
 ### OUTPUT
 
-![Screenshot (192)](https://github.com/user-attachments/assets/b5a69f65-934d-494f-aff4-85f24f38c9c5)
+![Screenshot (193)](https://github.com/user-attachments/assets/9795d6ac-9a86-40da-ad22-0a33bce3ddc3)
 
 ### RESULT
-Thus,the program to print the downward pyramid pattern of stars was implemented and executed successfully.
+Thus,the program to find the sum of series 1+3+5+7.......+N was implemented and executed successfully.
